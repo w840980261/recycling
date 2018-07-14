@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>互联网+废品回收</title>
+	<link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="layui-header header-doc">
+		<div class="layui-main">
+			<a class="logo" href=""><img src="./img/logo.png" alt=""></a>
+			<ul class="layui-nav">
+			  <li class="layui-nav-item">
+			    <a href="">首页</a>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="">用户管理</a>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="">回收员管理</a>
+			  </li>
+			  <li class="layui-nav-item layui-this">
+			    <a href="">回收品管理</a>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="">交易记录</a>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href=""><img src="http://t.cn/RCzsdCq" class="layui-nav-img">我</a>
+			    <dl class="layui-nav-child">
+			      <dd><a href="javascript:;">修改信息</a></dd>
+			      <dd><a href="javascript:;">安全管理</a></dd>
+			      <dd><a href="javascript:;">退出</a></dd>
+			    </dl>
+			</ul>
+		</div>
+	</div>
+
+  <main>
+  	<fieldset class="layui-elem-field layui-field-title">
+	  	<legend>废品一级分类</legend>
+	  	<div class="layui-field-box">
+				<button class="layui-btn" id="add_personForModal_btn">
+				  <i class="layui-icon">&#xe654;</i>添加一级分类
+				</button>
+				<button class="layui-btn layui-btn-normal" id="refresh_pm_btn">
+				  <i class="layui-icon">&#x1002;</i>刷新页面
+			  </button>
+				<table class="layui-table">
+				  <colgroup>
+				    <col width="150">
+				    <col width="20%">
+				    <col width="45%" align="left">
+				    <col>
+				  </colgroup>
+				  <thead>
+				    <tr>
+				      <th>序号</th>
+				      <th>名称</th>
+				      <th>描述</th>
+				      <th>操作</th>
+				    </tr> 
+				  </thead>
+				  <tbody>
+				    <tr>
+				    	<td>1</td>
+			        <td>废纸</td>
+			        <td></td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>2</td>
+			        <td>塑料</td>
+			        <td></td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+			    	</tr>
+				    <tr>
+				    	<td>3</td>
+			        <td>玻璃</td>
+			        <td></td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>4</td>
+			        <td>金属物</td>
+			        <td></td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>5</td>
+			        <td>布料</td>
+			        <td></td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+			  	</tbody>
+				</table>
+	  	</div>
+		</fieldset>
+
+		<fieldset class="layui-elem-field layui-field-title">
+	  	<legend>废品二级分类</legend>
+	  	<div class="layui-field-box">
+				<button class="layui-btn" id="add_personForModal_btn">
+				  <i class="layui-icon">&#xe654;</i>添加二级分类
+				</button>
+
+				<table class="layui-table">
+				  <colgroup>
+				    <col width="150">
+				    <col width="30%">
+				    <col width="35%" align="left">
+				    <col>
+				  </colgroup>
+				  <thead>
+				    <tr>
+				      <th>序号</th>
+				      <th>名称</th>
+				      <th>上级分类</th>
+				      <th>操作</th>
+				    </tr> 
+				  </thead>
+				  <tbody>
+				    <tr>
+				    	<td>1</td>
+			        <td>报纸</td>
+			        <td>废纸</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>2</td>
+			        <td>图书</td>
+			        <td>废纸</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>3</td>
+			        <td>硬纸箱</td>
+			        <td>废纸</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>4</td>
+			        <td>一次性塑料餐盒餐具</td>
+			        <td>塑料</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>5</td>
+			        <td>塑料袋</td>
+			        <td>塑料</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>6</td>
+			        <td>塑料泡沫</td>
+			        <td>塑料</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				    <tr>
+				    	<td>7</td>
+			        <td>硬塑料</td>
+			        <td>塑料</td>
+			        <td>
+			        	<button class="layui-btn layui-btn layui-btn-xs">编辑</button>
+			        	<button class="layui-btn layui-btn layui-btn-danger layui-btn-xs">删除</button>
+			        </td>
+				    </tr>
+				  </tbody>
+				</table>
+	  	</div>
+		</fieldset>
+	
+  </main>
+<script src="./js/jquery.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script src="./js/index.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>	
+</body>
+</html>

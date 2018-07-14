@@ -1,0 +1,29 @@
+.login-choose{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.login-choose a{
+	padding: 5px 20px;
+	color: #999;
+}
+.login-choose a:first-of-type{
+	border-right: 1px solid #e6e6e6;
+}
+.login-choose .chooseThis{
+	color: #1E9FFF;
+}
+
+.layui-form-label{
+	width: 40px;
+}
+.layui-input-block{
+	margin-left: 80px;
+}
+.layui-form-item{
+	text-align: center;
+}
+.login-btn{
+	width: 120px;
+	margin-top: 10px;
+}

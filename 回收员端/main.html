@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>互联网+废品回收</title>
+	<link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="layui-btn-group find-box">
+      <div class="layui-input-inline" style="width: 200px;">
+        <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+      </div>
+      <button class="layui-btn layui-btn-normal">搜索 <i class="iconfont icon-find"></i></button>
+    </div>
+
+    <div class="layui-carousel" id="adv">
+      <div carousel-item>
+        <div>广告位1</div>
+        <div>广告位2</div>
+        <div>广告位3</div>
+      </div>
+    </div>
+
+    <div class="news-box">
+      <p>新闻公告</p>
+      <ul>
+        <li>新闻1</li>
+        <li>新闻2</li>
+        <li>新闻3</li>
+      </ul>
+    </div>
+  </main>
+<script src="./js/jquery.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/menu.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  var height=$("#adv").width()*3/5;
+  //建造实例
+  carousel.render({
+    elem: '#adv'
+    ,width: '100%' //设置容器宽度
+    ,height: height
+    ,arrow: 'none' //始终显示箭头
+    ,autoplay: 'true'
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script>	
+</body>
+</html>

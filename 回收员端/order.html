@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>互联网+废品回收</title>
+	<link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="layui-btn-group find-box">
+      <div class="layui-input-inline" style="width: 200px;">
+        <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+      </div>
+      <button class="layui-btn layui-btn-normal">搜索 <i class="iconfont icon-find"></i></button>
+    </div>
+    <section class="order-box">
+      <p>未完成订单</p>
+      <div class="order-items">
+        <div class="order-item">
+          <p>订单号: <span class="or_black">76652468421</span></p>
+          <div>废纸</div>
+          <div class="order-item-state">
+            <p>状态 : <span class="or_red">待上门</span></p>
+            <p>总价 : <span class="or_red">？</span></p>
+          </div>
+          <div>
+            <button class="layui-btn layui-btn-primary layui-btn-xs">完善订单</button>
+            <button class="layui-btn layui-btn-primary layui-btn-xs">取消订单</button>
+          </div>
+        </div>
+        <div class="order-item">
+          <p>订单号: <span class="or_black">76652468421</span></p>
+          <div>废铁</div>
+          <div class="order-item-state">
+            <p>状态 : <span class="or_red">待付款</span></p>
+            <p>总价 : <span class="or_red">￥20.00</span></p>
+          </div>
+          <div>
+            <button class="layui-btn layui-btn-primary layui-btn-xs">付款</button>
+            <button class="layui-btn layui-btn-primary layui-btn-xs">取消订单</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order-box">
+      <p>已完成订单</p>
+      <div class="order-items">
+        <div class="order-item">
+          <p>订单号: <span class="or_black">76652468421</span></p>
+          <div>废纸</div>
+          <div class="order-item-state">
+            <p>状态 : <span class="or_blue">已完成</span></p>
+            <p>总价 : <span class="or_red">￥20.00</span></p>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div class="order-item">
+          <p>订单号: <span class="or_black">76652468421</span></p>
+          <div>废铁</div>
+          <div class="order-item-state">
+            <p>状态 : <span class="or_blue">已取消</span></p>
+            <p>总价 : <span class="or_red">￥20.00</span></p>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="btn-addOrder"><a href=""><i class="iconfont icon-add"></i></a></div>
+  </main>
+<script src="./js/jquery.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/order.js"></script>
+<script>
+//一般直接写在一个js文件中
+
+</script>	
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+	background-color: #fff;
+}
+main{
+	padding: 0;
+}
+.addOrder-address{
+	padding: 10px 10px 20px 10px;
+	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAKBAMAAACOO0tGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf///4u16Oxtbezz/J3B7NDh9vSmprjS8vGNjfjDw/vd3f7w8O57e0EOI68AAABSSURBVCjPY2CAAE4l7GACVJ4hUBArEIXJL8KuXw0mz4xdv2ABVJ77EHYDGmAGmGDXLwKT58CuX2cDTIEjdgOcYfJJ2A3Qgsmz4/CBwWgQUiMIAXzCOFELLk/nAAAAAElFTkSuQmCC) -7px bottom repeat-x;
+    background-size: 64px 5px;
+    border-bottom: 10px solid #f7f7f7;
+	position: relative;
+}
+.addOrder-address div{
+	color: #333;
+	padding-bottom: 6px;
+}
+.addOrder-address div span{
+	font-weight: 800;
+}
+.addOrder-address p{
+	font-size: 12px;
+	color: #333;
+}
+
+.order-items{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.order-item{
+	border-bottom: 1px solid #eee;
+	margin-left: 10px;
+	height: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+.order-items .order-item:last-of-type{
+	border-bottom: none;
+}
+.order-item>p{
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+.order-item>p:first-of-type{
+	float: left;
+	color: #333;
+}
+.order-title{
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 800;
+	border-bottom: 1px solid #eee;
+}
+
+.order-input{
+	width: 80px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.order-sum{
+	text-align: right;
+	padding: 10px;
+	margin: 10px 0 0;
+	color: #999;
+}
+.btn-order{
+	margin: 20px 0;
+}
+.or_red{
+	color: #e4393c;
+}
+.or_blue{
+	color: #3985ff;
+}
+.or_black{
+	color: #333;
+}

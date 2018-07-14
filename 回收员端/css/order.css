@@ -1,0 +1,88 @@
+.order-box>p{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #1E9FFF;
+	color: #fff;
+	width: 80px;
+	text-align: center;
+	border-radius: 6px 6px 0 0;
+}
+.order-items{
+	border: 1px solid #1E9FFF;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.order-item{
+	border-bottom: 6px solid #f0f2f5;
+}
+.order-items .order-item:last-of-type{
+	border-bottom: none;
+}
+.order-item>p{
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+}
+.order-item p{
+	color: #999;
+}
+
+.order-item>div:first-of-type{
+	padding: 10px;
+	background-color: #fafafa;
+	color: #252525;
+}
+.order-item-state{
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.order-item-state>p{
+	font-size: 12px;
+}
+.order-item-state>p:first-of-type{
+	float: left;
+}
+.order-item-state>p:nth-of-type(2){
+	float: right;
+}
+.order-item>div:nth-of-type(3){
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	border-top: 1px solid #eee;
+}
+
+.or_red{
+	color: #e4393c;
+}
+.or_blue{
+	color: #3985ff;
+}
+.or_black{
+	color: #333;
+}
+
+.btn-addOrder{
+	display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+    z-index: 1000;
+
+	background-color: #1E9FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+}
+.btn-addOrder a{
+	color: #fff;
+	display: block;
+}
+

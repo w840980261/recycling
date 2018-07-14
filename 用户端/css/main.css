@@ -1,0 +1,29 @@
+.layui-carousel{
+	border: 1px solid #009688;
+}
+.news-box{
+	margin: 10px 0;
+}
+.news-box p{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #009688;
+	color: #fff;
+	width: 80px;
+	text-align: center;
+	border-radius: 6px 6px 0 0;
+}
+.news-box ul{
+	border: 1px solid #009688;
+	padding: 5px 0;
+	background-color: #fff;
+}
+.news-box ul li{
+	height: 24px;
+	line-height: 24px;
+	padding: 0 10px;
+	margin-left: 5px;
+	color: #666;
+	background: url(http://i0.sinaimg.cn/home/main/index2013/0403/icon.png) no-repeat 0 -881px;
+}

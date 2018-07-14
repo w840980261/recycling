@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>互联网+废品回收</title>
+	<link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/addOrder.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div>
+      <div class="addOrder-address">
+        <div><span>姓名</span> &nbsp;&nbsp;&nbsp;180XXXXXXXX</div>
+        <p>地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址</p>
+      </div>
+      <div class="order-items">
+        <div class="order-title"><i class="iconfont icon-dingdan"></i> 订单明细</div>
+        <div class="order-item">
+          <p>类别-物品</p>
+          <p><input type="text" placeholder="斤" class="layui-input order-input"></p>
+          <p><span class="or_red">￥20.00</span> / 斤</p>
+        </div>
+        <div class="order-item">
+          <p>类别-物品</p>
+          <p><input type="text" placeholder="斤" class="layui-input order-input"></p>
+          <p><span class="or_red">￥20.00</span> / 斤</p>
+        </div>
+        <div class="order-item">
+          <p>类别-物品</p>
+          <p><input type="text" placeholder="斤" class="layui-input order-input"></p>
+          <p><span class="or_red">￥20.00</span> / 斤</p>
+        </div>
+      </div>
+      <p class="order-sum">总价： <span class="or_red">￥60.00</span></p>
+      <button class="layui-btn layui-btn-normal layui-btn-fluid btn-order">完善订单</button>
+    </div>
+  </main>
+<script src="./js/jquery.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script src="./js/header.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use(['layer', 'form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+  
+});
+</script>	
+</body>
+</html>

@@ -1,0 +1,76 @@
+body{
+    margin-bottom: 50px;
+    background-color: #f8f8f8;
+}
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #1E9FFF;
+}
+header a .iconfont{
+	color: #fff;
+	font-size: 30px;
+	line-height: 40px;
+	margin: 0 10px;
+}
+header a .icon-fanhui{
+	float: left;
+}
+header a .icon-geren{
+	float: right;
+}
+main{
+	padding: 20px 10px 10px;
+}
+.hidden{
+	display: none;
+}
+
+
+.menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    color: #808080;
+    border-top: 1px solid #eee;
+    background-color: #F7F7FA;
+    z-index: 1000;
+}
+
+.subMenu {
+    width: 33%;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.subMenu>p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.subMenu>div {
+    width: 100%;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.subMenu>div i {
+    font-size: 24px;
+}
+
+.active {
+    color: #1E9FFF;
+}
+
+.find-box{
+    position: relative;
+    left: 50%;
+    top: -10px;
+    width: 285px;
+    margin-left: -142px;
+}

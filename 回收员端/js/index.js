@@ -1,0 +1,38 @@
+$("#js-login").click(function(){
+	if($(this).hasClass("chooseThis")){
+		return;
+	}else{
+		$(this).addClass("chooseThis");
+		$("#js-registered").removeClass("chooseThis");
+		$("#section-login").removeClass("hidden");
+		if(!($("#section-registered1").hasClass("hidden"))){
+			$("#section-registered1").addClass("hidden");
+		}
+		if(!($("#section-registered2").hasClass("hidden"))){
+			$("#section-registered2").addClass("hidden");
+		}
+	}
+});
+$("#js-registered").click(function(){
+	if($(this).hasClass("chooseThis")){
+		return;
+	}else{
+		$(this).addClass("chooseThis");
+		$("#js-login").removeClass("chooseThis");
+		$("#section-login").addClass("hidden");
+		if(($("#section-registered1").hasClass("hidden"))){
+			$("#section-registered1").removeClass("hidden");
+		}
+	}
+});
+$("#js-verificationCode").click(function(){
+	$("#section-registered1").addClass("hidden");
+	$("#section-registered2").removeClass("hidden");
+});
+$("#js-action-registered").click(function(){
+	layer.msg('注册成功，请重新登陆'); 
+	$("#js-login").addClass("chooseThis");
+	$("#js-registered").removeClass("chooseThis");
+	$("#section-login").removeClass("hidden");
+	$("#section-registered2").addClass("hidden");
+});

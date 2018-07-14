@@ -1,0 +1,51 @@
+.personal-box{
+	position: relative;
+	margin-top: 100px;
+	background-color: #fff;
+}
+.portrait{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	border: 2px solid #eee;
+}
+.personal-name{
+	margin-left: 110px;
+	padding: 10px;
+	height: 50px;
+	line-height: 22px;
+	color: #333;
+}
+.personal-name p:last-of-type{
+	color: #999;
+	font-size: 12px;
+}
+
+
+.personal-items{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	margin-top: 20px;
+}
+.personal-item{
+	border-bottom: 1px solid #eee;
+	margin-left: 10px;
+	padding: 10px 10px 10px 0;
+	height: 20px;
+}
+.personal-items .personal-item:last-of-type{
+	border-bottom: none;
+}
+.personal-item>p:first-of-type{
+	float: left;
+	color: #333;
+}
+.personal-item>p:last-of-type{
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
